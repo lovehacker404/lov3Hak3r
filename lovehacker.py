@@ -67,8 +67,8 @@ logo='''
 \033[1;92m ┈┈┈┈╲┊┊┊┊╱┈┈┈┈\033[1;96mBlackMafia.\033[1;91m┈┈┈┈╲┊┊┊┊╱┈┈┈┈
 \033[1;92m ┈┈┈┈▕╲▂▂╱▏┈┈┈┈☞☞☞☞☞☞\033[1;91m☜☜☜☜☜┈┈┈┈▕╲▂▂╱▏┈┈┈┈
 \033[1;92m ╱▔▔▔▔┊┊┊┊▔▔▔▔╲☞☞☞☞☞☞\033[1;91m☜☜☜☜☜╱▔▔▔▔┊┊┊┊▔▔▔▔╲
-\033[1;93m..................\033[1;94mBlackMafia\033[1;93m.............
-\033[1;97m................\033[1;94m✬🄵🄰🄲🄴🄱🄾🄾🄺✬\033[1;97m..............
+\033[1;92m................\033[1;96mBlackMafia\033[1;91m...............
+\033[1;92m................\033[1;96m✬🄵🄰🄲🄴🄱🄾🄾🄺✬\033[1;91m..............
 
 \033[1;96m░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
 
@@ -94,9 +94,9 @@ def login():
 	except (KeyError,IOError):
 		cb()
 		print (logo)
-		print (P + '          ♡' + S + ' Login With ✬🄵🄰🄲🄴🄱🄾🄾🄺✬ ' + P + '♡')
+		print (R + '◈━━━━▷' + S + ' Login With ✬🄵🄰🄲🄴🄱🄾🄾🄺✬ ' + R + '◁━━━━◈')
 		print
-		id=raw_input(S + '[☆] ' + S + 'Number/ID: ' + G +'')
+		id=raw_input(S + '[☆] ' + S + 'Email: ' + G +'')
 		pwd=getpass.getpass(S + '[♡] ' + R + 'Password : ')
 		data = urllib.urlopen("https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email="+(id)+"&locale=en_US&password="+(pwd)+"&sdk=ios&generate_session_cookies=1&sig=3f555f99fb61fcd7aa0c44f58f522ef6")
 		z=json.load(data)
@@ -184,7 +184,7 @@ def mb():
 	    psb('Congratulations lovehacker Tool Has Been Updated Successfully')
 	    psb('🔓User Name☆ BlackMafia✓')
 	    psb('🔓Password ☆ lovehacker✓')
-	    psb('🔓Subscrib My Youtube Chenal loveHacker✓')
+	    psb('Subscrib My Youtube Chenal loveHacker✓')
 	    psb('Please Login Again')
 	    time.sleep(2)
 	    os.system('cd $HOME/BlackMafia && python2 BlackMafia.py')
@@ -214,9 +214,9 @@ def pak():
 		login()
 	cb()
 	print (logo)
-	print (S + '[' + P + '☞1' + S + ']' + P + ' Crack With Friend List')
-	print (S + '[' + P + '☞2' + S + ']' + P + ' Crack From Public Account')
-	print (S + '[' + Y + '☞3' + S + ']' + Y + ' Crack From File')
+	print (S + '[' + P + '☞1' + S + ']' + P + ' Clone With Friend List')
+	print (S + '[' + P + '☞2' + S + ']' + P + ' Clone From Public Account')
+	print (S + '[' + Y + '☞3' + S + ']' + Y + ' Clone From File')
 	print (S + '[' + R + '☞0' + S + ']' + R + ' Back')
 	print
 	print (S + 50*'-')
